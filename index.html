@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript practice</title>
+  </head>
+  <body>
+    <p id="demo1">demo1</p>
+    <p id="demo2">demo2</p>
+    <button type="button" onclick="myFunction()">click me</button>
+    <p>
+      <span style="text-decoration: underline"
+        ><em><strong>Hello</strong></em></span
+      >
+    </p>
+    <script>
+      function myFunction() {
+        let cars = ["BMW", "Ford", "Kia", "Honda"];
+        let i;
+        let a = "";
+        for (i = 0; i < 4; i++) {
+          a += cars[i] + "<br>";
+        }
+        document.getElementById("demo1").innerHTML = a;
+      }
+    </script>
+  </body>
+</html>
